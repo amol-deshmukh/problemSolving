@@ -43,7 +43,7 @@ public class RearrageArray {
 
     public static void main(String [] args){
 
-        int[] input1= {1,54,3,2,66,3,33,543,234,234342,0};
+        int[] input1= {-1,2,4,3,5,2,5};
         int[] input2= {0,1,2,3,4};
 
         System.out.println(Arrays.toString(RearrageArray.getRearrangedArray(input1)));
