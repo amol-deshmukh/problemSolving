@@ -2,15 +2,6 @@ package com.deshmukh.tree;
 
 public class InOrderTraversal {
     Node root;
-
-    /***
-     *
-     * postorder
-     * Left-Right-Root
-     */
-
-
-
     public static void main(String[] args) {
         InOrderTraversal tree= new InOrderTraversal();
         tree.root= new InOrderTraversal.Node(1);
@@ -27,10 +18,14 @@ public class InOrderTraversal {
             return;
         printInOrderTravels(node.left);
         System.out.println(node.key);
-
         printInOrderTravels(node.right);
-
     }
+
+
+
+
+
+
 
 
 
