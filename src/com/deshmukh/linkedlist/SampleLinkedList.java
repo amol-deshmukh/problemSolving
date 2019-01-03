@@ -1,12 +1,13 @@
 package com.deshmukh.linkedlist;
 
+
 public class SampleLinkedList {
 
 
-    LinkedListNode head;
+    public LinkedListNode head;
 
 
-    static class LinkedListNode {
+    public static class LinkedListNode {
 
         int data;
         LinkedListNode next;
@@ -30,6 +31,19 @@ public class SampleLinkedList {
         second.next = third;
         third.next = fourth;
 
+
+        printLinkedList(linkedList);
+
+
+    }
+
+    private static void printLinkedList(SampleLinkedList linkedList) {
+
+        LinkedListNode n = linkedList.head;
+        while (n != null) {
+            System.out.println(n.data);
+            n = n.next;
+        }
 
     }
 }
