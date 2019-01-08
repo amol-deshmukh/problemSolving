@@ -32,6 +32,12 @@ public class PrintRightViewOfBinaryTree {
         root.right.right.left = new Node(14);
         printRightView(root);
 
+        // answer is
+        //10
+        //3
+        //15
+        //14
+
 
     }
 
