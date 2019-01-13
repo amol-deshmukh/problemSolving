@@ -27,7 +27,7 @@ public class LowestCommonAncestorInBinaryTree {
         if (root == null) {
             return null;
         }
-        if (root == n1 || root == n2) {
+        if (root.data == n1.data || root.data == n2.data) {
             return root;
         }
 
@@ -47,6 +47,8 @@ public class LowestCommonAncestorInBinaryTree {
         tree.root.right = new Node(3);
         tree.root.left.left = new Node(4);
         tree.root.left.right = new Node(5);
-        System.out.println(lca(tree.root, new Node(4), new Node(2)).data);
+        tree.root.right.left = new Node(6);
+        tree.root.right.right = new Node(7);
+        System.out.println(lca(tree.root, new Node(6), new Node(7)).data);
     }
 }
